@@ -12,7 +12,7 @@ ReactDOM.render(
     <HomeRoute path='/' component={MasterPage}>
       <IndexRoute component={IndexPage} />
       <Route path='/register' component={RegistrationPage} />
-      <Route path='/verify/:sptoken' component={VerifyPage} />
+      <Route path='/verify' component={VerifyPage} />
       <LoginRoute path='/login' component={LoginPage} />
       <AuthenticatedRoute>
         <HomeRoute path='/profile' component={ProfilePage} />
@@ -21,3 +21,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById('app-container')
 );
+
+      // <Route path='/verify/:sptoken' component={VerifyPage} />

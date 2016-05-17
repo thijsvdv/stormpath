@@ -16,6 +16,8 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
  
 app.use(stormpath.init(app, {
+  enableAccountVerification: true,
+  website: true,
   web: {
     produces: ['application/json']
   },

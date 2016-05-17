@@ -1,13 +1,9 @@
 import React from 'react';
-import { RegistrationForm } from 'react-stormpath';
-import atomatic from 'atomatic';
+import { RegistrationForm, VerifyEmailView } from 'react-stormpath';
+
+window.test = VerifyEmailView;
 
 export default class VerifyPage extends React.Component {
-  
-  componentWillMount() {
-    console.log('YEAAAAAH');
-    console.log(this);
-  }
   
   render() {
     return (
@@ -17,7 +13,7 @@ export default class VerifyPage extends React.Component {
             <div>
               <h3>Verify</h3>
               <hr />
-              
+              <VerifyEmailView spToken={this.props.location.query.sptoken} />
             </div>
           </div>
  
