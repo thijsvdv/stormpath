@@ -1,8 +1,6 @@
 import React from 'react';
 import { RegistrationForm, VerifyEmailView } from 'react-stormpath';
 
-window.test = VerifyEmailView;
-
 export default class VerifyPage extends React.Component {
   
   render() {
